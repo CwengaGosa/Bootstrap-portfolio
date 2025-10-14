@@ -20,62 +20,121 @@
 
   <body class="bg-light">
     <!-- banner wrap -->
-    <div class="banner-wrap vh-100 vw-100 text-white">
-      <div class="overlay"></div>
-      <header class="px-5 p-3 text-white fixed-top scrolling">
-        <!-- navbar -->
-        <div>
-          <h3 class="float-md-start text-center">Portfolio</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#about-us">About me</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
-          </nav>
+    <div class="banner-wrap vh-100 vw-100">
+
+      <!-- main content -->
+      <main class="container-fluid h-100 d-flex align-items-center">
+        <div class="row w-100 align-items-center">
+          <!-- Profile Image Column -->
+          <div class="col-md-5 text-center">
+            <img src="assets/profileimage.jpeg" class="img-fluid rounded-circle profile-image" alt="Cwenga Gosa Profile Picture">
+          </div>
+          <!-- Content Column -->
+          <div class="col-md-7">
+            <div class="hero-content">
+              <h1 class="display-2 fw-bold text-primary mb-3">Cwenga Gosa</h1>
+              <div class="mb-4">
+                <h2 class="lead fs-3 text-secondary">Full Stack Web Developer</h2>
+              </div>
+              <p class="lead fs-5 text-muted mb-4">
+                I'm a Full-Stack Web Developer skilled in React, Node.js, Express.js, Python, TypeScript 
+                and JavaScript, with hands-on experience building responsive, user-focused web applications. 
+                I'm passionate about problem-solving, AI, and cloud technologies (Azure &AWS). I enjoy 
+                collaborating in agile teams and am dedicated to continuous learning and improvement. 
+                I have a strong foundation in both front-end and back-end development.
+              </p>
+              <div class="d-flex gap-3">
+                <a href="#about-us" class="btn btn-outline-primary btn-lg">About Me</a>
+                <a href="#projects" class="btn btn-outline-primary btn-lg view-work-btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg">Get In Touch</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
-      <!-- main heading -->
-      <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
-        <h1 class="display-1">Cwenga Gosa</h1>
-        <span class="lead" id="typed"></span>
       </main>
     </div>
-    <!-- about me card -->
-    <section id="about-us">
+    <!-- about me section -->
+    <section id="about-us" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
       <div class="container p-5">
-        <div class="card">
-          <div class="card-body">
-            <div class="row p-3">
-              <div class="col-md-6 col-sm-12">
-                <div class="row">
-                  <!-- image -->
-                  <div class="col-md-5">
-                    <img src="https://zaio-user-profile-image.s3.eu-west-2.amazonaws.com/958386d2-f71e-4632-8024-0b0152d25c0b.jpeg" class="img-fluid" alt="...">
-                  </div>
-                  <!-- quick info about me -->
-                  <div class="col-md-7 mt-3">
-                    <p><strong>Name:</strong>Cwenga Gosa</p>
-                    <p><strong>Email:</strong> gosacwenga28@gmail.com</p>
-                    <p>
-                      <strong>Skills:</strong>
-                      <span class="badge rounded-pill bg-dark">HTML</span>
-                      <span class="badge rounded-pill bg-dark">CSS</span>
-                      <span class="badge rounded-pill bg-dark">git</span>
-                      <span class="badge rounded-pill bg-dark">javascript</span>
-                      <span class="badge rounded-pill bg-dark">Problem-solving</span>
-                      <span class="badge rounded-pill bg-dark">Communication</span>
-                      <span class="badge rounded-pill bg-dark">Self-management</span>
-                      <span class="badge rounded-pill bg-dark">Organisation</span>
-                      <span class="badge rounded-pill bg-dark">Critical-thinking</span>
-                      <span class="badge rounded-pill bg-dark">Collaboration</span>
-                      </p>
-                  </div>
+        <h1 class="text-center mb-5 display-4 fw-bold text-primary">About Me</h1>
+        
+        <!-- Top Row: Technical Skills and Experience Cards -->
+        <div class="row mb-4">
+          <!-- Technical Skills Card -->
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body p-4">
+                <h3 class="mb-3" style="color: #4A90E2;">Technical Skills</h3>
+                <div class="mb-3">
+                  <p><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript, React.js, Redux, React Hooks</p>
+                </div>
+                <div class="mb-3">
+                  <p><strong>Backend:</strong> Node.js, Express.js, Python, Object-Oriented Programming (OOP)</p>
+                </div>
+                <div class="mb-3">
+                  <p><strong>Database & Tools:</strong> MongoDB, Git</p>
+                </div>
+                <div class="mb-3">
+                  <p><strong>Cloud:</strong> Azure, AWS</p>
+                </div>
+                <div class="mb-3">
+                  <p><strong>Other:</strong> Data Structures, Algorithms</p>
                 </div>
               </div>
-              <!-- paragraph about me -->
-              <div class="col-md-6 mt-3">
-                <h1 class="text-center text-md-start"><mark>About me</mark></h1>
-                <p class="lead">I have been a Debate Adjudicator since exiting high school. I adjudicate World Schools' style and British Parliamentary style debates. In 2023 I began my journey to becoming a Traditional Healer, which is something I still practice daily. I am currently studying under Zaio on my journey to becoming a Fullstack Developer. I believe people are multi-faceted and should be allowed to explore all sides of themselves in order to live a fulfilled life. I ensure to express all sides of myself in everything I do. I make sure my projects have my heart in them as well.</p>
+            </div>
+          </div>
+
+          <!-- Experience Card -->
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body p-4">
+                <h3 class="mb-3" style="color: #4A90E2;">Experience</h3>
+                <div class="mb-4">
+                  <h5 class="fw-bold">Junior Software Developer | AfluMed Healthcare</h5>
+                  <p class="text-muted mb-2">Johannesburg | April 2025 – Present</p>
+                  <ul class="list-unstyled ms-3">
+                    <li class="mb-2">• Develop and optimize frontend and backend systems using React.js and MongoDB.</li>
+                    <li class="mb-2">• Design and test website workflows to improve user experience.</li>
+                    <li class="mb-2">• Provide client support through debugging, issue resolution, and training sessions.</li>
+                    <li class="mb-2">• Present system demos and functionality updates to clients.</li>
+                    <li class="mb-2">• Enhance internal team communication through structured digital tools and task tracking.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row: Education Card (Full Width) -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body p-4">
+                <h3 class="mb-3" style="color: #4A90E2;">Education</h3>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <h5 class="fw-bold">Camblish Training Institute | Systems Development Learnership (NQF Level 4)</h5>
+                    <p class="text-muted mb-2">Online | January 2025 – Present</p>
+                    <p class="ms-3">Focus on Python programming, OOP principles, systems testing, and network fundamentals.</p>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <h5 class="fw-bold">Zaio Coding School | Full-Stack Web Development Certification</h5>
+                    <p class="text-muted mb-2">Online | January 2024 – October 2024</p>
+                    <p class="ms-3">Certificates in HTML, CSS, JavaScript, React, Node.js, Python, Data Structures, and Algorithms.</p>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <h5 class="fw-bold">MICT SETA | NQF Level 5 Certificate – Advanced HTML for Business Applications</h5>
+                    <p class="text-muted mb-2">October 2024</p>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <h5 class="fw-bold">Youth Employment Service (YES) – Oracle Program</h5>
+                    <p class="text-muted mb-2">Online | November 2024 – Present</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -83,25 +142,109 @@
       </div>
     </section>
     <!-- Projects section -->
-    <section id="projects">
+    <section id="projects" class="py-5" style="background: #ffffff;">
       <div class="container p-5">
-        <h1 class="text-center"><mark>Projects</mark></h1>
+        <h1 class="text-center mb-5 display-4 fw-bold text-primary">My Projects</h1>
         <div class="row">
+          <!-- busamed event and clinic management card -->
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <!-- title-card image -->
+              <img
+                src="assets/busamed.png"
+                class="card-img-top"
+                alt="Busamed Event and Clinic Management"
+              />
+              <!-- title card body -->
+              <div class="card-body">
+                <h5 class="card-title" style="color: #4A90E2;">Busamed Event and Clinic Management</h5>
+                <p class="card-text">Built with HTML, CSS & JavaScript</p>
+                <a href="https://busa-med2-frontend.vercel.app/" target="_blank" class="btn btn-primary">View Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- job portal card -->
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <!-- title-card image -->
+              <img
+                src="assets/jobportal.png"
+                class="card-img-top"
+                alt="Job Portal"
+              />
+              <!-- title card body -->
+              <div class="card-body">
+                <h5 class="card-title" style="color: #4A90E2;">Job Portal</h5>
+                <p class="card-text">Built with HTML, CSS & JavaScript</p>
+                <a href="https://healthspacejob-portral-frontend.vercel.app/" target="_blank" class="btn btn-primary">View Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- amazon clone card -->
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <!-- title-card image -->
+              <img
+                src="assets/amazon.png"
+                class="card-img-top"
+                alt="Amazon Clone"
+              />
+              <!-- title card body -->
+              <div class="card-body">
+                <h5 class="card-title" style="color: #4A90E2;">Amazon Clone</h5>
+                <p class="card-text">Built with HTML, CSS & JavaScript</p>
+                <a href="https://shopping-project2024.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- airbnb clone card -->
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <!-- title-card image -->
+              <img
+                src="assets/airnbnb.png"
+                class="card-img-top"
+                alt="Airbnb Clone"
+              />
+              <!-- title card body -->
+              <div class="card-body">
+                <h5 class="card-title" style="color: #4A90E2;">Airbnb Clone</h5>
+                <p class="card-text">Built with HTML, CSS & JavaScript</p>
+                <a href="https://bnb-clone-project2024.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- note keeping site card -->
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <!-- title-card image -->
+              <img
+                src="assets/notekeeping.png"
+                class="card-img-top"
+                alt="Note Keeping Site"
+              />
+              <!-- title card body -->
+              <div class="card-body">
+                <h5 class="card-title" style="color: #4A90E2;">Note Keeping Site</h5>
+                <p class="card-text">Built with HTML, CSS & JavaScript</p>
+                <a href="https://cwenga-note-keeping-js-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+              </div>
+            </div>
+          </div>
           <!-- netflix card -->
           <div class="col-md-4 mt-3">
             <div class="card">
               <!-- title-card image -->
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                src="assets/netflix.png"
                 class="card-img-top"
-                alt="..."
+                alt="Netflix Landing Page"
               />
               <!-- title card body -->
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://netflix-login-page-cwclone.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/CwengaGosa/Cwenga-git-netflix" target="_blank" class="btn btn-outline-success"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title" style="color: #4A90E2;">Netflix Landing Page</h5>
+                <p class="card-text">Built with HTML & CSS</p>
+                <a href="https://movie-streaming-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
               </div>
             </div>
           </div>
@@ -110,16 +253,15 @@
             <div class="card">
               <!-- title-card image -->
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/Tesla.png"
+                src="assets/tesla.png"
                 class="card-img-top"
-                alt="..."
+                alt="Tesla Landing Page"
               />
               <!-- title card body -->
               <div class="card-body">
-                <h5 class="card-title">Tesla Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://tesla-landing-page-cwclone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/CwengaGosa/tesla-landing-page" target="_blank" class="btn btn-outline-success"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title" style="color: #4A90E2;">Tesla Landing Page</h5>
+                <p class="card-text">Built with HTML & CSS</p>
+                <a href="https://cars-landing-page-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
               </div>
             </div>
           </div>
@@ -128,16 +270,32 @@
             <div class="card">
               <!-- title-card image -->
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/html_youtube.png"
+                src="assets/youtube.png"
                 class="card-img-top"
-                alt="..."
+                alt="YouTube Landing Page"
               />
               <!-- title card body -->
               <div class="card-body">
-                <h5 class="card-title">Youtube Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://cwenga-youtube-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/CwengaGosa/cwenga-youtube-clone" target="_blank" class="btn btn-outline-success"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title" style="color: #4A90E2;">Youtube Landing Page</h5>
+                <p class="card-text">Built with HTML & CSS</p>
+                <a href="https://cwenga-video-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- twitter card -->
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <!-- title-card image -->
+              <img
+                src="assets/twitter.png"
+                class="card-img-top"
+                alt="Twitter Landing Page"
+              />
+              <!-- title card body -->
+              <div class="card-body">
+                <h5 class="card-title" style="color: #4A90E2;">Twitter Landing Page</h5>
+                <p class="card-text">Built with HTML & CSS</p>
+                <a href="https://cwenga-thought-bubble-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
               </div>
             </div>
           </div>
@@ -145,42 +303,70 @@
       </div>
     </section>
     <!-- contact me section -->
-    <section id="contact">
+    <section id="contact" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
       <div class="container p-5">
-        <div class="card p-3">
-          <div class="card-body px-5 text-center">
-           <h1><mark>Let's Connect</mark></h1>
-           <p class="lead">Would love to connect with fellow developers, employers looking for developers, or anyone looking to get web development done.</p>
-           <a class="fs-2" href="https://www.instagram.com/cwenga__gosa/" target="_blank"><i class="bi bi-instagram m-2"></i></a>
-           <a class="fs-2" href="https://www.linkedin.com/in/cwenga-gosa-4139a32aa/" target="_blank"><i class="bi bi-linkedin m-2"></i></a>
-           <a class="fs-2" href="https://app.netlify.com/teams/gosacwenga28/overview" target="_blank"><i class="bi bi-github m-2"></i></a>
+        <h1 class="text-center mb-5 display-4 fw-bold text-primary">Get In Touch</h1>
+        
+        <!-- Single Contact Card -->
+        <div class="card shadow-lg border-0" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            <!-- Contact Information -->
+            <div class="row g-3 text-center">
+              <!-- Email -->
+              <div class="col-lg-3 col-md-6">
+                <div class="contact-item p-4 h-100" style="background: rgba(0,123,255,0.05); border-radius: 12px; transition: all 0.3s ease;">
+                  <i class="bi bi-envelope-fill text-primary fs-3 mb-3 d-block"></i>
+                  <h6 class="text-muted mb-2">Email</h6>
+                  <a href="mailto:gosacwenga28@gmail.com" class="text-decoration-none fw-semibold">gosacwenga28@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="col-lg-3 col-md-6">
+                <div class="contact-item p-4 h-100" style="background: rgba(0,123,255,0.05); border-radius: 12px; transition: all 0.3s ease;">
+                  <i class="bi bi-telephone-fill text-success fs-3 mb-3 d-block"></i>
+                  <h6 class="text-muted mb-2">Phone</h6>
+                  <a href="tel:+27674315375" class="text-decoration-none fw-semibold">067 431 5375</a>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="col-lg-3 col-md-6">
+                <div class="contact-item p-4 h-100" style="background: rgba(0,123,255,0.05); border-radius: 12px; transition: all 0.3s ease;">
+                  <i class="bi bi-linkedin text-primary fs-3 mb-3 d-block"></i>
+                  <h6 class="text-muted mb-2">LinkedIn</h6>
+                  <a href="https://www.linkedin.com/in/cwenga-gosa-4139a32aa/" target="_blank" class="text-decoration-none fw-semibold">Connect</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="col-lg-3 col-md-6">
+                <div class="contact-item p-4 h-100" style="background: rgba(0,123,255,0.05); border-radius: 12px; transition: all 0.3s ease;">
+                  <i class="bi bi-github text-dark fs-3 mb-3 d-block"></i>
+                  <h6 class="text-muted mb-2">GitHub</h6>
+                  <a href="https://github.com/CwengaGosa" target="_blank" class="text-decoration-none fw-semibold">View Code</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-dark text-center text-white">
-      <div class="container p-3">
-        <p>Developed by Cwenga Gosa using Bootstrap, for Zaio Bootstrap course</p>
+    <footer class="text-center text-muted py-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-top: 1px solid rgba(0,123,255,0.1);">
+      <div class="container">
+        <p class="mb-0">© 2025 Cwenga Gosa | Full-Stack Web Developer</p>
+        <p class="mb-0"><small>Built with passion using React, Node.js & modern web technologies</small></p>
       </div>
     </footer>
 
     <script>
       window.addEventListener("scroll", () => {
         const header = document.querySelector("header")
-        header.classList.toggle("scrolling", window.scrollY > 0)
+        if (header) {
+          header.classList.toggle("scrolling", window.scrollY > 0)
+        }
       })
     </script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
-  </script>
-
-  <script>
-    var typed = new Typed('#typed', {
-    strings: ['Traditional Healer.', 'Debate Adjudicator.', 'Aspiring Web-Developer.'],
-    loop: true,
-    typeSpeed: 75,
-    shuffle: true
-    });
-  </script>
   </body>
 </html>

@@ -6,35 +6,24 @@
 
 /* header styling */
 .banner-wrap{
-  background-image: url(./assets/backgroun-image.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
-  z-index: 1;
-}
-
-.overlay{
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background: black;
-  opacity: 60%;
-  position: absolute;
-  top: 0;
+  min-height: 100vh;
+  padding: 2rem 0;
 }
 
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  font-weight: 600;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  transition: all 0.3s ease;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: #007bff;
+  color: #007bff !important;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -42,13 +31,102 @@
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #007bff !important;
+  border-bottom-color: #007bff;
 }
 
-.scrolling {
-  background: black;
-  opacity: 80%;
-  transition: all 0.5s;
+/* Profile image styling */
+.profile-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  box-shadow: 0 10px 30px rgba(0,123,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Hero content styling */
+.hero-content {
+  padding: 3rem 2rem;
+}
+
+/* Main container styling */
+.banner-wrap .container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Button hover effects */
+.view-work-btn:hover {
+  background-color: #003d82 !important;
+  border-color: #003d82 !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+/* Card styling */
+.card {
+  border: 2px solid rgba(0,123,255,0.1) !important;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-radius: 15px !important;
+  background: rgba(255,255,255,0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,123,255,0.15);
+  border-color: #007bff !important;
+}
+
+/* Section styling */
+section {
+  min-height: auto;
+}
+
+/* Project card specific styling */
+#projects .card {
+  background: #ffffff !important;
+  border: 2px solid rgba(0,123,255,0.1) !important;
+}
+
+/* About me cards styling */
+#about-us .card {
+  background: rgba(255,255,255,0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Contact section styling */
+.contact-method:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,123,255,0.15);
+}
+
+.social-card:hover,
+.contact-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,123,255,0.2) !important;
+}
+
+.social-item a:hover .social-card,
+.contact-item:hover {
+  border: 2px solid rgba(0,123,255,0.3);
 }
 
